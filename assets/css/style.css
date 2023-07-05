@@ -1,0 +1,110 @@
+
+/* ************************Fisheye accueil******************************* */
+*  {
+    margin: 0;
+}
+
+.body-index{
+    margin: 0;
+    font-family: 'DM', sans-serif;
+}
+
+.body-index header {
+    padding: 42px 100px 0 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-index header img{
+    width: 200px;
+    height: 50px;
+}
+
+.body-index header h1{
+    font-weight: 400;
+    color: #901C1C;
+    font-size: 36px;    
+}
+
+#main-index{
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.photograph-container img {
+    width: 200px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.photograph-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 70px;
+    justify-content: space-between;
+    column-gap: 100px;
+}
+
+.photograph-container .photograph-content-accueil img{
+    width: 200px;
+    height: 200px;
+}
+
+.photograph-accueil-text h2{
+    color: #cb5050;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+}
+
+.photograph-accueil-text h4{
+    color: #901C1C;
+    margin-bottom: -5px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    text-align: center;
+}
+
+.photograph-accueil-text p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    margin: 3px;
+}
+
+.photograph-accueil-text .money{
+    color: #757575;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+}
+
+.photograph-content-accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media ( max-width: 1116px){
+    #main-index .photograph-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media( max-width: 991px){
+    #main-index .photograph-container{
+        grid-template-columns: 1fr;
+    }
+
+    .body-index header{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
