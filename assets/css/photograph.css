@@ -102,7 +102,9 @@ header img{
 
 /*footer*/
 #footer-photograph{
-    width: 240px;
+    font-size: 24px;
+    width: max-content;
+    font-family: 'DM', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,10 +114,9 @@ header img{
     background-color: #cb5050;
     font-size: 1.1rem;
     font-weight: bold;
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 5px;
+    padding: 20px 30px;
     margin-left: 1340px;
+    border-radius: 5px;
 }
 
 #footer-photograph .react-footer{
@@ -132,6 +133,7 @@ header img{
         font-size: 22px;
     }
 }
+
 @media  ( max-width: 1116px){
     .photograph-header{
         padding: 40px 35px;
@@ -139,6 +141,10 @@ header img{
 
     .photograph-container-projet{
         grid-template-columns: 1fr 1fr;
+    }
+
+    #footer-photograph{
+        font-size: 18px;
     }
 }
 
@@ -196,9 +202,32 @@ header img{
     .body-index2 main{
         margin-bottom: 50px;
     }
-    
+
     .reaction-text p {
         font-size: 18px;
+    }
+
+    .modal .modal-content{
+        width: 80%!important;
+        text-align: start;
+    }
+
+    .modal .modal-content h1{
+        font-size: 36px;
+    }
+
+    .modal .form-div label {
+        font-size: 18px;
+    }
+
+    .modal .div-button button {
+        font-size: 14px;
+        padding: 18px 30px;
+    }
+
+    #footer-photograph {
+        font-size: 14px;
+        padding: 15px 22px;
     }
 }
 
